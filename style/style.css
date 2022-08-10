@@ -1,0 +1,271 @@
+/*----------- Import google fonts -----------*/
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
+
+/*------------- Reset browser default settings ------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*------------- Set font family ---------------*/
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/*----------------- Navbar elements --------------*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 16px 16px 0 16px;
+}
+.logo {
+  width: 48px;
+  height: 48px;
+}
+.logo img {
+  width: 100%;
+}
+.navbar__btn button {
+  border: none;
+  background: #030303;
+  color: #fff;
+  padding: 8px 28px;
+  border-radius: 28px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+/* ------------ Hero title ------------*/
+.hero__title h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  padding: 34px 16px 16px 16px;
+  color: #030303;
+}
+.hero__text p {
+  width: 285px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 auto;
+  color: #7a746e;
+}
+
+/*---------------- Image__container ---------------*/
+.image__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 32px;
+  margin-bottom: 100px;
+}
+.image_graphic {
+  width: 343px;
+  height: 364px;
+  background: #755cde;
+  border-radius: 8px;
+  position: relative;
+}
+.image__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 375px;
+}
+.image_ui-ux,
+.image_app {
+  width: 159px;
+  height: 182px;
+  background: #f6a560;
+  border-radius: 8px;
+  position: relative;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+.image_app {
+  background: #f39e9e;
+}
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 24px 24px 0 0;
+}
+.image__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0 0 24px 24px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.image_illustration,
+.image_photography,
+.image_motion {
+  width: 343px;
+  height: 158px;
+  background: #eb7565;
+  border-radius: 8px;
+  position: relative;
+}
+.image_photography {
+  background: #61c4b7;
+}
+.image_motion {
+  background: #552049;
+}
+
+/*------------- Profile container ----------------*/
+.profile__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile__image {
+  width: 300px;
+}
+.profile__image img {
+  width: 100%;
+}
+.profile__title h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  text-align: center;
+  margin: 40px 24px;
+  color: #030303;
+}
+.profile__text p {
+  width: 343px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #7a746e;
+}
+.profile__btn button {
+  border: none;
+  background: #eb7565;
+  color: #fff;
+  padding: 8px 28px;
+  border-radius: 28px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 24px 0 100px 0;
+}
+
+/*----------------- Image slider ------------------*/
+.image__slider_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image__slider_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #030303;
+  margin-bottom: 32px;
+}
+.image__slider {
+  display: flex;
+  gap: 15px;
+}
+.image__slider img {
+  width: 270px;
+  border-radius: 10px;
+}
+.arrows {
+  width: 64px;
+  height: 64px;
+  margin: 32px auto 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrows img {
+  margin-right: 16px;
+  border-radius: 50%;
+  background: #030303;
+  padding: 24px;
+}
+.arrows img:last-child {
+  margin-right: 0;
+}
+
+/*------------- Contact box -------------*/
+.contact__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #030303;
+  border-radius: 10px;
+  padding: 49px 24px 48px 24px;
+  margin: 0 16px;
+}
+.contact__title h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  text-align: center;
+  color: #fff7f0;
+}
+.contact__text p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff7f0;
+  margin: 24px 0;
+}
+.contact__btn button {
+  border: none;
+  background: #eb7565;
+  color: #fff;
+  padding: 8px 28px;
+  border-radius: 28px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+/*-------------- Footer -------------*/
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 17px 32px 15px;
+}
+.footer__logo {
+  width: 48px;
+  height: 48px;
+}
+.footer__logo img {
+  width: 100%;
+}
+.footer__btn button {
+  border: none;
+  background: #030303;
+  color: #fff;
+  padding: 8px 28px;
+  border-radius: 28px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+}
