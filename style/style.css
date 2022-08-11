@@ -11,6 +11,7 @@
 /*------------- Set font family ---------------*/
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 /*----------------- Navbar elements --------------*/
@@ -60,10 +61,8 @@ body {
 
 /*---------------- Image__container ---------------*/
 .image__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   gap: 24px;
   margin-top: 32px;
   margin-bottom: 100px;
@@ -133,6 +132,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+.profile__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 .profile__image {
   width: 300px;
 }
@@ -154,6 +159,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #7a746e;
+  margin: 0 auto;
 }
 .profile__btn button {
   border: none;
@@ -268,4 +274,143 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 28px;
+}
+
+/*---------------------- Tablet Screen -------------------*/
+@media (min-width: 768px) {
+  /*----------- Navbar ------------*/
+  .navbar {
+    margin: 34px 39px 0 39px;
+  }
+  .logo {
+    width: 64px;
+    height: 64px;
+  }
+  .navbar__btn button {
+    padding: 14px 48px;
+    font-size: 16px;
+  }
+
+  /*--------------- Hero ------------*/
+  .hero__title h1 {
+    font-size: 44px;
+    line-height: 55px;
+  }
+  .hero__text p {
+    width: 573px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  /*------------- Image boxes -----------*/
+  .image__container {
+    margin-top: 64px;
+    grid-template-columns: 333px 333px;
+    padding: 0 39px;
+    justify-content: center;
+  }
+  .image_graphic {
+    width: 333px;
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+  .image__wrapper {
+    grid-column: 2;
+  }
+  .image_illustration {
+    grid-column: 2;
+    width: 333px;
+  }
+  .image_ui-ux,
+  .image_app {
+    width: 155px;
+    margin: 0;
+  }
+  .image_ui-ux {
+    margin-left: 23px;
+  }
+  .image_app {
+    margin-right: 23px;
+  }
+  .image_photography {
+    width: 333px;
+  }
+  .image_motion {
+    width: 333px;
+  }
+  /*-------------------- Profile ----------------*/
+  .profile__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .profile__image {
+    width: 364px;
+    transform: translateX(-12%);
+  }
+  .profile__wrapper {
+    width: 339px;
+    margin-right: 40px;
+  }
+  .profile__title h2 {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
+    margin: 0;
+  }
+  .profile__text p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 24px auto;
+  }
+  .profile__btn {
+    text-align: start;
+  }
+  .profile__btn button {
+    margin: 0;
+  }
+
+  /*------------------ Image Slider --------------*/
+  .image__slider_container {
+    margin-top: 120px;
+  }
+  .image__slider {
+    gap: 30px;
+  }
+  .image__slider img {
+    width: 540px;
+  }
+
+  /*--------------- Contact -------------*/
+  .contact__box {
+    margin: 0 39px;
+  }
+  .contact__title h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .contact__text p {
+    width: 540px;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 26px 0;
+  }
+  .contact__btn button {
+    padding: 14px 45px;
+    font-size: 16px;
+  }
+
+  /*-------------------- Footer ------------------*/
+  .footer__container {
+    margin: 56px 40px 56px 39px;
+  }
+  .footer__logo {
+    width: 64px;
+    height: 64px;
+  }
+  .footer__btn button {
+    padding: 14px 45px;
+    border-radius: 28px;
+    font-size: 16px;
+  }
 }
