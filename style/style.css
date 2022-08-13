@@ -189,6 +189,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 .image__slider_title {
   font-weight: 700;
@@ -201,6 +202,7 @@ body {
 .image__slider {
   display: flex;
   gap: 15px;
+  overflow-x: hidden;
 }
 .image__slider img {
   width: 270px;
